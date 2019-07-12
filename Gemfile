@@ -40,7 +40,10 @@ gem 'bootstrap', '~> 4.3.1'
 
 gem 'jquery-rails'
 
+# Used for pagination
 gem 'kaminari'
+
+gem 'simple_form'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
