@@ -18,6 +18,14 @@ class PlacesController < ApplicationController
     @place = Place.find(params[:id])
   end
 
+  def edit
+    @place = Place.find(params[:id])
+  end
+
+  def update
+    redirect_to place_path
+  end
+
   private
 
   def place_params
