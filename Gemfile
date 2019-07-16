@@ -50,6 +50,11 @@ gem 'font-awesome-rails'
 # for authentication
 gem 'devise'
 
+gem 'geocoder'
+
+# for securing env variables
+gem 'figaro'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end 
