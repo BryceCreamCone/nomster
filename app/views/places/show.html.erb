@@ -1,17 +1,17 @@
 <div class="booyah-box col-10 offset-1">
   <% if @place.photos.last.present? %>
-    <%= image_tag @place.photos.last.picture.to_xml %>
+    <%= image_tag(@place.photos.last.picture.url) %>
   <% end %>
-  <div class="float-left">
-    <h1><%= @place.name %></h1>
-    <i><%= @place.address %></i>
-    <br /><br />
-    <p><%= @place.description %></p>
-  </div>
+  <br />
+  <h1><%= @place.name %></h1>
+  <i><%= @place.address %></i>
+  <br /><br />
+  <p><%= @place.description %></p>
   <button type="button" class="btn btn-primary btn-lg float-right" data-toggle="modal" data-target="#myPhotoModal">
     Add a Photo
   </button>
   <div class="clear"></div>
+  <br />
 
   <% if @place.latitude.present? && @place.longitude.present? %>
   <script>
