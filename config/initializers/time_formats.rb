@@ -1,0 +1,1 @@
+Time::DATE_FORMATS[:long_no_time] = '%A, %B %e %Y'
