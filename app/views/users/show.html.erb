@@ -9,4 +9,23 @@
       <h4><%= @user.comments.count %> total comments</h4>
       <h4><%= @user.comments.where(rating: '5_stars').count %> total 5 Star review(s)</h4>
     </div>
+  </div>
+</div>
+<br /><br />
+<h1 class="text-center">My Comments</h1>
+<br /><br />
+<div class="row">
+  <% if @user.comments.present? %>
+    <% @user.comments.each do |comment| %>
+      <div class="col-10 col-sm-6">
+        <blockquote>
+          <% if comment.humanized_rating.present? %>
+            <b><%= comment.humanized_rating %></b> - 
+          <% end %>
+          <%= comment.message %>
+          <%= link_to "#{comment.place.name}", place_path(comment.place) %>
+        </blockquote>
+      </div>
+    <% end %>
+  <% end %>
 </div>
