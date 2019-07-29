@@ -50,6 +50,7 @@ img {
 .navbar {
   background: image_url('dark-honeycomb.png');
   box-shadow: 0px 1px 3px #2a2a2a;
+  margin-bottom: 0;
 }
 
 .navbar-dark .navbar-brand {
@@ -109,4 +110,25 @@ blockquote:before {
 
 blockquote p {
   display: inline;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 90%;
+}
+
+.carousel-caption {
+  font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 90%;
+  position: absolute;
+  left: 5%;
+}
+
+.carousel {
+  background: image_url('dark-honeycomb.png');
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
