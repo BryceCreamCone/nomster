@@ -50,7 +50,7 @@
 <br /><br />
 <h1 class="text-center">My Places</h1>
 <br /><br />
-<% @user.places.each do |place| %>
+<% @user_places.each do |place| %>
 <div class="booyah-box col-10 offset-1">
   <% if place.photos.last.present? %>
     <%= image_tag(place.photos.last.picture.url) %>
@@ -73,3 +73,4 @@
   <% end %>
 </div>
 <% end %>
+<%= paginate @user_places %>
