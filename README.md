@@ -1,24 +1,5 @@
-# README
+# Nomster
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A yelp clone with Ruby on Rails and AWS! 
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Integrating a Google Maps widget for each location uploaded. At the moment you do have to create an account in order to rate or create a new place.
